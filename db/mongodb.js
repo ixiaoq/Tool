@@ -26,11 +26,17 @@
  * 
  * 跳过条数
  *   skip
- *
+ * 
+ * 等于	        {<key>:<value>}
+ * 小于	        {<key>:{$lt:<value>}}
+ * 小于或等于   {<key>:{$lte:<value>}}
+ * 大于         {<key>:{$gt:<value>}}
+ * 大于或等于   {<key>:{$gte:<value>}}
+ * 不等于       {<key>:{$ne:<value>}}
  */
 
 
-const MongoClient = require("mongodb").MongoClient;
+ const MongoClient = require("mongodb").MongoClient;
 
 /**
  * 构造函数
