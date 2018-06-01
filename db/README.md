@@ -5,17 +5,17 @@
 
 配置数据库路径信息
 ```js
-const dbUrl = `mongodb://139.199.129.237:27017`;
+const dbUrl = `mongodb://0.0.0.0:27017`;
 const dbName = `meizi`;
 
 const db = new MongoDB(dbUrl, dbName);
 ```
 
 插入数据
-o 插入单条数据（对象）
-o 插入多条数据（数组）
 
 ```js
+// 插入单条数据（对象）
+// 插入多条数据（数组）
 let data = {name: 'zhangsan', pwd: '123456'};
 
 db.insert("test", data, (err, result) => {
